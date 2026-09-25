@@ -2,7 +2,7 @@
 Cybersecurity Lab Environment Setup Building an isolated virtual lab for penetration testing and ethical hacking practice.
 # 🔐 Password Cracking with John the Ripper — Cybersecurity Skills Report
 
-**Course:** Networkwalks Academy — Cybersecurity & Ethical Hacking with AI (Week 3)
+**Course:** Networkwalks Academy — Cybersecurity & Ethical Hacking (Week 3)
 **Focus tool:** John the Ripper (JtR) — via the Johnny GUI front-end
 **Target:** Password-protected PDF files
 **Date completed:** September 2026
