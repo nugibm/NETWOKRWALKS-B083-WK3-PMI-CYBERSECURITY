@@ -59,49 +59,50 @@ $pdf$4*4*128*-1028*1*16*34eb542eff4e1b0b32d25ce15a9a7281*32*b77872bfc9a24fb2f845
 Used an online `pdf2john` utility to convert the encrypted PDF into a hash format that
 John the Ripper / hashcat can process.
 
-05-pdf1-unlocked-congrats.png
-![PDF hash extractor output](./screenshots/06-pdf-hash-extractor-output.png)
+<img width="1917" height="1067" alt="09-onlinehashcrack-landing" src="https://github.com/user-attachments/assets/266a1c87-9cf1-4099-af61-a16084e6ad5d" />
+
 
 ### 2. Extract the hash for a second target PDF
 Repeated the extraction using networkwalks.com's own Hash Calculator tool for a second
 locked PDF, confirming the same `$pdf$` hash structure.
 
-![Networkwalks hash calculator extracting PDF2 hash](./screenshots/04-hash-calculator-pdf2-extraction.png)
+<img width="1167" height="990" alt="04-hash-calculator-pdf2-extraction" src="https://github.com/user-attachments/assets/c90c7c6f-1fec-43cd-b21e-320d46e7fbe9" />
+
 
 ### 3. Run a dictionary attack against the extracted hash
 Fed the extracted hash into a wordlist/dictionary attack. The attack iterated through
 common password candidates until a match was found.
 
-![Password cracker wordlist attack finds a match](./screenshots/03-password-cracker-wordlist-match.png)
+<img width="1167" height="1006" alt="03-password-cracker-wordlist-match" src="https://github.com/user-attachments/assets/c939ab18-fb8f-49b0-a4b9-ce5a11331f9e" />
+
 
 ### 4. Unlock the PDF with the recovered password
 Used the cracked password to open the originally locked PDF, confirming the recovered
 credential was correct and capturing the flag.
 
-![PDF unlocked, flag captured](./screenshots/02-pdf2-unlocked-flag.png)
+<img width="1172" height="982" alt="05-pdf1-unlocked-congrats" src="https://github.com/user-attachments/assets/11da109a-c502-49a5-97aa-d91c287e37fb" />
+
+
 
 ### 5. Configure John the Ripper via the Johnny GUI
 Set up **Johnny** (the JtR graphical interface) by pointing it at the John the Ripper
 Jumbo executable, ready to load a password/hash file and start a real cracking session.
+<img width="871" height="696" alt="08-johnny-jtr-gui-setup" src="https://github.com/user-attachments/assets/ea3c30db-8250-4f68-be28-cb2c368ccdf4" />
 
-![Johnny GUI configured with John the Ripper executable](./screenshots/08-johnny-jtr-gui-setup.png)
 
 ### 6. Crack and unlock the second PDF with JtR
 Ran John the Ripper against a target hash and used the recovered password to decrypt
 the corresponding PDF.
 
-![Second PDF unlocked with JtR-recovered password](./screenshots/05-pdf1-unlocked-congrats.png)
+<img width="1382" height="1021" alt="02-pdf2-unlocked-flag" src="https://github.com/user-attachments/assets/8fa6b0a8-a4da-4056-a4c2-b9fad19bf52f" />
+
 
 ### 7. Final flag — persistence pays off
 The final exercise emphasized persistence and wordlist selection as key skills for a
 real security tester — captured on successfully cracking the last target with JtR.
 
-![Final flag captured via JtR](./screenshots/01-jtr-persistence-flag.png)
+<img width="1167" height="1006" alt="03-password-cracker-wordlist-match" src="https://github.com/user-attachments/assets/191d5696-9409-4247-8efe-30c3a38ce276" />
 
-## 🏁 Flags Captured
-
-- `nw{networkwalks_flag_260821_1}`
-- `nw{networkwalks_persistence_jtr_270521}`
 
 ## 🗒️ Notes & Takeaways
 
