@@ -116,7 +116,8 @@ real security tester — captured on successfully cracking the last target with 
   for a security tester auditing password strength.
 
 ---
-
+ Author Gilbert Nuwagaba Mpuga Cybersecurity Professional B083
+ 
 *This report documents a personal cybersecurity training exercise completed on
 [Networkwalks Academy](https://networkwalks.com) for portfolio and learning-log purposes.
 All target files were provided by the course for practice and contain no real
