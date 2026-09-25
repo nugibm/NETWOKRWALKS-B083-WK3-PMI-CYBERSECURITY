@@ -59,7 +59,7 @@ $pdf$4*4*128*-1028*1*16*34eb542eff4e1b0b32d25ce15a9a7281*32*b77872bfc9a24fb2f845
 Used an online `pdf2john` utility to convert the encrypted PDF into a hash format that
 John the Ripper / hashcat can process.
 
-![PDF hash extractor landing page](./screenshots/09-onlinehashcrack-landing.png)
+05-pdf1-unlocked-congrats.png
 ![PDF hash extractor output](./screenshots/06-pdf-hash-extractor-output.png)
 
 ### 2. Extract the hash for a second target PDF
